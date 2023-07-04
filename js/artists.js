@@ -55,7 +55,7 @@ const artistData = [
 
 function createMoreBtn() {
     const moreBtn = document.createElement('button');
-    moreBtn.innerText = 'MORE';
+    moreBtn.innerHTML = 'MORE<i id="more-icon" class="fa-solid fa-chevron-down"></i>';
     moreBtn.id = 'more-btn';
     moreBtn.addEventListener('click', () => {
         document.querySelectorAll('.artist-card').forEach((item) => {
@@ -75,7 +75,7 @@ artistData.forEach((artist, i) => {
         artistCard.classList.add('visible');
     }
 
-    artistCard.innerHTML = `<div class="artist-img" style='background: url(${artist.imgSrc}); background-size: contain; background-clip: border-box; background-repeat: no-repeat; background-position: center;'>
+    artistCard.innerHTML = `<div class="artist-img" style='background: url(${artist.imgSrc}); background-size: cover; background-clip: border-box; background-repeat: no-repeat; background-position: center;'>
                             </div>
                             <div class="artist-info">
                                 <h2 class="artist-name">${artist.name}</h2>
