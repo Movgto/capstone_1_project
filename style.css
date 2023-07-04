@@ -1,0 +1,199 @@
+:root {
+    --dark-color: #555555;
+    --orange-color: #EC5242;
+    --light-color: #F8F8F8;
+}
+
+*, 
+*:after, 
+*:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fff;
+    color: var(--dark-color);
+    padding-top: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    padding: 0 1.5rem;
+}
+
+.title {
+    color: var(--orange-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#event-desc {
+    margin-top: 2rem;
+    font-size: 1rem;
+    border: solid 0.2rem #fff;
+    padding: 1rem;
+    line-height: 1.5rem;
+    background-color: var(--light-color);
+}
+
+#date {
+    margin: 1rem 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#date-address address {
+    font-style: normal;
+}
+
+/* ------ Program activities ------ */
+
+#program-activities {
+    margin: 5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #272A31;
+    color: var(--light-color);
+    padding: 2rem;
+    width: 100vw;
+}
+
+#activities-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#activities-bar {
+    width: 5rem;
+    border-color: red;
+    margin: 1rem 0;
+}
+
+#activities-ctr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+}
+.program-card {
+    display: flex;
+    background-color: #494b50;
+    padding: 0.5rem;
+}
+
+.half-area-ctr {
+    display: flex;
+    flex: 1 1;
+}
+
+.activity-text {
+    flex: 1 1;
+}
+
+.activity-name {
+    color: var(--orange-color);
+    align-self: center;
+}
+
+#join-btn {
+    align-self: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--orange-color);
+    color: #fff;
+    border-radius: none;
+    border: transparent;
+    font-size: 1.2rem;
+}
+
+#join-btn:hover {
+    cursor: pointer;
+    background-color: #da766b;
+}
+
+/* ------ Artist cards ------ */
+
+#artists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #10151B;
+    width: 100%;
+}
+
+#artists-header {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.artist-card {
+    display: none;
+    margin-bottom: 1rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+.artist-card.visible {
+    display: flex;
+}
+
+.artist-occupations {
+    color: var(--orange-color);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+
+.artist-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 2 2;
+}
+
+.artist-info hr {
+    width: 2rem;
+    border-color: var(--light-color);
+}
+
+#artists-header hr {
+    border-color: var(--orange-color);
+    width: 5rem;
+    margin: 1rem 0;
+}
+
+.artist-img {
+    flex: 1 1;
+}
+
+.artist-desc {
+    font-size: 1rem;
+}
+
+#more-btn {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #fff;
+    font-size: 1.2rem;
+}
