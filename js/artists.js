@@ -83,10 +83,10 @@ artistData.forEach((artist, i) => {
                                 <hr />
                                 <p class="artist-desc">${artist.desc}</p>
                             </div>`;
-    const artistImg = artistCard.querySelector('.artist-img');
-    artistImg.style.background = `url(${artist.imgSrc}) no-repeat center`;
-    artistImg.style.backgroundSize = 'cover';
-    artistImg.style.backgroundClip = 'border-box';
+  const artistImg = artistCard.querySelector('.artist-img');
+  artistImg.style.background = `url(${artist.imgSrc}) no-repeat center`;
+  artistImg.style.backgroundSize = 'cover';
+  artistImg.style.backgroundClip = 'border-box';
 
   artistsCtr.appendChild(artistCard);
 });
@@ -117,7 +117,6 @@ window.addEventListener('resize', () => {
     artistImg.forEach((artist) => {
       artist.style.backgroundSize = 'cover';
     });
-    
   } else {
     if (!moreBtn) {
       createMoreBtn();

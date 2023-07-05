@@ -6,35 +6,34 @@ const main = document.querySelector('main');
 const about = document.querySelector('#about');
 
 const navHandler = (e) => {
-    const name = e.target.innerText;
-    console.log('Name:', name);
+  const name = e.target.innerText;
 
-    switch(name) {
-        case 'About':
-            if (currentPage !== 'about') {
-                currentPage = 'about';
-                main.classList.toggle('unactive');
-                about.classList.toggle('unactive');
-            }
-            break;
+  switch (name) {
+    case 'About':
+      if (currentPage !== 'about') {
+        currentPage = 'about';
+        main.classList.toggle('unactive');
+        about.classList.toggle('unactive');
+      }
+      break;
 
-        case 'Home':
-            if (currentPage !== 'home') {
-                currentPage = 'home';
-                main.classList.toggle('unactive');
-                about.classList.toggle('unactive');
-            }
-            break;
+    case 'Home':
+      if (currentPage !== 'home') {
+        currentPage = 'home';
+        main.classList.toggle('unactive');
+        about.classList.toggle('unactive');
+      }
+      break;
 
-        default:
-            break;
-    }
+    default:
+      break;
+  }
 };
 
 navButtons.forEach((item) => {
-    item.addEventListener('click', navHandler);
+  item.addEventListener('click', navHandler);
 });
 
 popupButtons.forEach((item) => {
-    item.addEventListener('click', navHandler);
+  item.addEventListener('click', navHandler);
 });

@@ -104,7 +104,7 @@ main {
 
 #activities-bar {
   width: 5rem;
-  border-color: #A04038;
+  border-color: #a04038;
   margin: 1rem 0;
 }
 
@@ -291,13 +291,6 @@ footer {
 #partners-ctr {
   width: 100%;
   background-color: var(--dark-color);
-}
-
-#inner-footer {
-  width: 100%;
-}
-
-#partners-ctr {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,7 +305,7 @@ footer {
 
 #partners-ctr hr {
   width: 5rem;
-  border: solid 0.1rem #A04038; 
+  border: solid 0.1rem #a04038;
 }
 
 #partners {
@@ -327,6 +320,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 0 2rem;
+  width: 100%;
 }
 
 #inner-footer img {
@@ -393,14 +387,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding-top: 2rem;
 }
 
 #about-header hr {
   display: none;
   width: 5rem;
-  border-top: solid #A04038;
+  border-top: solid #a04038;
   margin: 2rem 0;
 }
 
@@ -447,7 +441,7 @@ footer {
 
 #see-past hr {
   width: 5rem;
-  border-top: solid #A04038;
+  border-top: solid #a04038;
   margin: 1rem 0;
 }
 
@@ -507,7 +501,6 @@ footer {
 }
 
 @media only screen and (min-width: 765px) {
-
   #activities-ctr {
     flex-direction: row;
   }
@@ -538,6 +531,11 @@ footer {
     font-size: 1.2rem;
   }
 
+  #desktop-menu li {
+    list-style: none;
+    text-decoration: none;
+  }
+
   #header-1 li:nth-child(n+3) {
     font-size: 0.8rem;
   }
@@ -555,11 +553,6 @@ footer {
     align-items: center;
     gap: 4rem;
     font-weight: 700;
-  }
-
-  #desktop-menu li {
-    list-style: none;
-    text-decoration: none;
   }
 
   #desktop-menu li:hover {
