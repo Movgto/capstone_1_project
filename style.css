@@ -104,7 +104,7 @@ main {
 
 #activities-bar {
   width: 5rem;
-  border-color: red;
+  border-color: #A04038;
   margin: 1rem 0;
 }
 
@@ -288,16 +288,51 @@ footer {
   flex-direction: column;
 }
 
-#footer-1 {
+#partners-ctr {
   width: 100%;
-  height: 15rem;
   background-color: var(--dark-color);
 }
 
-#footer-2 {
+#inner-footer {
   width: 100%;
-  height: 6rem;
 }
+
+#partners-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+#partners-ctr h2 {
+  color: #fff;
+}
+
+#partners-ctr hr {
+  width: 5rem;
+  border: solid 0.1rem #A04038; 
+}
+
+#partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#inner-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+#inner-footer img {
+  width: 5rem;
+}
+
 
 /* ------ Popup ------ */
 
@@ -305,12 +340,14 @@ footer {
   display: flex;
   position: absolute;
   width: 0;
-  top: 50%;
+  top: 8rem;
   left: 0;
   z-index: 10;
   background-color: #fff;
   justify-content: center;
   overflow: hidden;
+  padding: 2rem 0;
+  box-shadow: 0 0 2rem rgb(0, 0, 0, 0.6);
 }
 
 #popup-list {
@@ -328,19 +365,146 @@ footer {
   cursor: pointer;
 }
 
-.expanding {
-  animation: expand 200ms ease;
+#popup.expanding {
+  animation: expand 200ms ease 1;
+  width: 14rem;
 }
 
-.collapsing {
-  animation: collapse 200ms ease;
+#popup.collapsing {
+  animation: collapse 200ms ease 1;
+  width: 0;
 }
 
 .unactive {
-  display: none;
+  display: none !important;
 }
 
-@media only screen and (min-width: 1000px) {}
+/* ------ About ------ */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#about-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7F7F7;
+  padding-top: 2rem;
+}
+
+#about-header hr {
+  display: none;
+  width: 5rem;
+  border-top: solid #A04038;
+  margin: 2rem 0;
+}
+
+#about-title {
+  text-align: center;
+  color: var(--orange-color);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#about-text {
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 70rem;
+  margin-top: 4rem;
+}
+
+#about-contact {
+  margin-top: 4rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+#about-header address {
+  color: var(--dark-color);
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: underline;
+  margin: 1rem 0 4rem 0;
+}
+
+#see-past {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+#see-past h2 {
+  color: black;
+}
+
+#see-past hr {
+  width: 5rem;
+  border-top: solid #A04038;
+  margin: 1rem 0;
+}
+
+.past-event-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 30rem;
+  height: 15rem;
+  position: relative;
+  color: #fff;
+}
+
+.past-event-card:hover {
+  cursor: pointer;
+}
+
+.past-event-card:nth-child(1) {
+  background-image: url('./images/2019.webp');
+  background-size: cover;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+.past-event-card:nth-child(2) {
+  background-image: url('./images/2021.webp');
+  background-size: cover;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+#past-ctr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.past-event-card h3 {
+  font-size: 2rem;
+  z-index: 5;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--orange-color);
+}
 
 @media only screen and (min-width: 765px) {
 
@@ -427,6 +591,19 @@ footer {
   #bars-button {
     display: none;
   }
+
+  #about-header hr {
+    display: block;
+  }
+
+  #about-text {
+    margin-top: 0;
+  }
+
+  #past-ctr {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 @keyframes expand {
@@ -435,13 +612,13 @@ footer {
   }
 
   to {
-    width: 8rem;
+    width: 14rem;
   }
 }
 
 @keyframes collapse {
   from {
-    width: 8rem;
+    width: 14rem;
   }
 
   to {
