@@ -7,13 +7,44 @@
     <title>APE Festival Webpage</title>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./js/artists.js"></script>
+    <script defer src="./js/popup.js"></script>
+    <script defer src="./js/navigation.js"></script>
     <script src="https://kit.fontawesome.com/76eab5b41f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div id="header-1"></div>
-        <div id="header-2"></div>
+        <div id="header-1">
+            <ul>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li>English</li>
+                <li>My page</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+        <div id="header-2">
+            <aside id="popup">
+                <ul id="popup-list">
+                    <li><a>About</a></li>
+                    <li><a>Program</a></li>
+                    <li><a>Join</a></li>
+                    <li><a>Sponsor</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Home</a></li>
+                </ul>
+            </aside>
+            <i class="fa-solid fa-bars" id="bars-button"></i>
+            <img src="./images/logo.jpg" id="header-img" />
+            <ul id='desktop-menu'>
+                <li><a>About</a></li>
+                <li><a>Program</a></li>
+                <li><a>Join</a></li>
+                <li><a>Sponsor</a></li>
+                <li><a>News</a></li>
+                <li><a>Home</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <div id="header-wrapper">
@@ -91,10 +122,23 @@
             </div>
         </section>
     </main>
+    <section id="about" class="unactive">
+        <div id="about-header">
+            <h2 id="about-title"></h2>
+            <hr />
+            <p id="about-text"></p>
+            <p id="about-contact">
+                <a></a>
+            </p>
+        </div>
+    </section>
     <footer>
         <div id="footer-1"></div>
         <div id="footer-2"></div>
     </footer>
+    <section id="secondary-footer" class="unactive">
+
+    </section>
 </body>
 
 </html>
