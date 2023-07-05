@@ -46,7 +46,7 @@ Building a webpage with home and about page
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming soon
+- You can see a live demo [here](https://movgto.github.io/capstone_1_project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
