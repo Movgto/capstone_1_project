@@ -92,8 +92,8 @@ If you like this project you can give me a good rating or leave a nice comment, 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank you for taking your time for passing by.
-Credits to [Cindy Shin](https://www.behance.net/adagio07), who is the designer of the templated used for this project.
+I would like to thank you for taking your time for passing by.\
+Special credits to [Cindy Shin](https://www.behance.net/adagio07), who is the designer of the webpage template used for this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
