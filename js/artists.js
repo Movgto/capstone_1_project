@@ -131,7 +131,6 @@ window.addEventListener('resize', () => {
     artistImg.forEach((artist) => {
       artist.style.backgroundSize = 'cover';
     });
-
   } else {
     if (!moreBtn) {
       createMoreBtn();
