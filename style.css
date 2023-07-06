@@ -436,11 +436,11 @@ header {
   padding: 0 2rem;
   text-align: center;
   font-weight: 700;
-  color: #7A7A7A;
+  color: #7a7a7a;
 }
 
 #about-header address {
-  color: #5F5F5F;
+  color: #5f5f5f;
   font-weight: 700;
   font-style: normal;
   text-decoration: underline;
@@ -454,7 +454,7 @@ header {
   align-items: center;
   width: 100%;
   position: relative;
-  border-top: solid 0.1rem #E0E2E7;
+  border-top: solid 0.1rem #e0e2e7;
 }
 
 #see-past h2 {
@@ -527,7 +527,7 @@ header {
   background-color: var(--orange-color);
 }
 
-/* ------ Logo history ------*/
+/* ------ Logo history ------ */
 #logo-history {
   display: flex;
   flex-direction: column;
@@ -552,12 +552,12 @@ header {
 #logo-history img {
   width: 100%;
   max-width: 25rem;
-  border: solid 0.1rem #E0E2E7;
+  border: solid 0.1rem #e0e2e7;
 }
 
 #logo-history hr {
   border: solid 0.12rem #a04038;
-  width: 5rem; 
+  width: 5rem;
 }
 
 @media only screen and (min-width: 765px) {
