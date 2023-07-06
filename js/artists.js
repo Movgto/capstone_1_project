@@ -1,4 +1,15 @@
 const artistsCtr = document.getElementById('artists');
+const joinBtn = document.getElementById('join-btn');
+
+const capitalizeStr = (str) => {
+  const strArr = str.toLowerCase().split(' ');
+
+  strArr.forEach((item, i) => {
+    strArr[i] = item.charAt(0).toUpperCase() + item.slice(1);
+  });
+
+  return strArr.join(' ');
+};
 
 const artistData = [
   {
@@ -94,6 +105,7 @@ artistData.forEach((artist, i) => {
 if (window.innerWidth < 765) {
   createMoreBtn();
   const artistImg = document.querySelectorAll('.artist-img');
+  joinBtn.textContent = capitalizeStr(joinBtn.textContent);
   artistImg.forEach((artist) => {
     artist.style.backgroundSize = 'contain';
   });
@@ -113,10 +125,13 @@ window.addEventListener('resize', () => {
       moreBtn.remove();
     }
 
+    joinBtn.textContent = joinBtn.textContent.toUpperCase();
+
     const artistImg = document.querySelectorAll('.artist-img');
     artistImg.forEach((artist) => {
       artist.style.backgroundSize = 'cover';
     });
+
   } else {
     if (!moreBtn) {
       createMoreBtn();
@@ -128,6 +143,8 @@ window.addEventListener('resize', () => {
         }
       }
     });
+
+    joinBtn.textContent = capitalizeStr(joinBtn.textContent);
 
     const artistImg = document.querySelectorAll('.artist-img');
     artistImg.forEach((artist) => {

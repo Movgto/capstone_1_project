@@ -1,5 +1,6 @@
 const barsButton = document.getElementById('bars-button');
 const popup = document.getElementById('popup');
+console.log('Popup script working');
 
 barsButton.addEventListener('click', () => {
   if (barsButton.classList.contains('fa-bars')) {

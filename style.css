@@ -68,6 +68,7 @@ main {
   margin-top: 2rem;
   font-size: 1rem;
   border: solid 0.2rem #fff;
+  color: #515151;
   padding: 1rem;
   line-height: 1.5rem;
   background-color: var(--light-color);
@@ -104,7 +105,7 @@ main {
 
 #activities-bar {
   width: 5rem;
-  border-color: #a04038;
+  border: solid 0.12rem #a04038;
   margin: 1rem 0;
 }
 
@@ -113,7 +114,7 @@ main {
   flex-direction: column;
   gap: 0.6rem;
   width: 100%;
-  max-width: 50rem;
+  max-width: 70rem;
 }
 
 .program-card {
@@ -122,9 +123,14 @@ main {
   padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
+.program-card img {
+  width: 5rem;
+}
+
 .half-area-ctr {
   display: flex;
   flex: 1 1;
+  padding-left: 2rem;
 }
 
 .activity-text {
@@ -133,6 +139,7 @@ main {
 
 .activity-name {
   color: var(--orange-color);
+  font-weight: 700;
   align-self: center;
   width: 100%;
   text-align: center;
@@ -167,7 +174,7 @@ main {
   gap: 2rem;
   color: #10151b;
   width: 100%;
-  max-width: 70rem;
+  max-width: 80rem;
   padding: 0 2rem;
 }
 
@@ -183,7 +190,7 @@ main {
 .artist-card {
   display: none;
   margin-bottom: 1rem;
-  width: 100%;
+  flex: 1 1;
   gap: 1rem;
 }
 
@@ -207,7 +214,7 @@ main {
 
 .artist-info hr {
   width: 2rem;
-  border-color: var(--light-color);
+  border: solid 0.12rem var(--light-color);
 }
 
 #artists-header hr {
@@ -267,6 +274,11 @@ header {
   position: relative;
 }
 
+#header-2 a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
 #desktop-menu {
   display: none;
 }
@@ -283,9 +295,16 @@ header {
   cursor: pointer;
 }
 
-footer {
+#home-footer {
   display: flex;
   flex-direction: column;
+}
+
+#about-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-color) !important;
+  color: #fff;
 }
 
 #partners-ctr {
@@ -305,7 +324,7 @@ footer {
 
 #partners-ctr hr {
   width: 5rem;
-  border: solid 0.1rem #a04038;
+  border: solid 0.12rem #a04038;
 }
 
 #partners {
@@ -319,7 +338,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
   width: 100%;
 }
 
@@ -393,7 +412,7 @@ footer {
 #about-header hr {
   display: none;
   width: 5rem;
-  border-top: solid #a04038;
+  border: solid 0.12rem #a04038;
   margin: 2rem 0;
 }
 
@@ -409,16 +428,19 @@ footer {
   padding: 2rem;
   max-width: 70rem;
   margin-top: 4rem;
+  color: #000;
 }
 
 #about-contact {
   margin-top: 4rem;
   padding: 0 2rem;
   text-align: center;
+  font-weight: 700;
+  color: #7A7A7A;
 }
 
 #about-header address {
-  color: var(--dark-color);
+  color: #5F5F5F;
   font-weight: 700;
   font-style: normal;
   text-decoration: underline;
@@ -432,6 +454,7 @@ footer {
   align-items: center;
   width: 100%;
   position: relative;
+  border-top: solid 0.1rem #E0E2E7;
 }
 
 #see-past h2 {
@@ -440,8 +463,13 @@ footer {
 
 #see-past hr {
   width: 5rem;
-  border-top: solid #a04038;
+  border: solid 0.12rem #a04038;
   margin: 1rem 0;
+}
+
+#see-past p {
+  color: #838383;
+  font-weight: 700;
 }
 
 .past-event-card {
@@ -499,9 +527,50 @@ footer {
   background-color: var(--orange-color);
 }
 
+/* ------ Logo history ------*/
+#logo-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 70rem;
+  gap: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#logo-history h2 {
+  color: #000;
+}
+
+#logo-history p {
+  color: #838383;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+#logo-history img {
+  width: 100%;
+  max-width: 25rem;
+  border: solid 0.1rem #E0E2E7;
+}
+
+#logo-history hr {
+  border: solid 0.12rem #a04038;
+  width: 5rem; 
+}
+
 @media only screen and (min-width: 765px) {
   #activities-ctr {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .half-area-ctr {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 1rem;
   }
 
   .program-card {
@@ -595,6 +664,15 @@ footer {
   #past-ctr {
     flex-direction: row;
     justify-content: center;
+  }
+
+  #join-btn {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  #join-btn:hover {
+    background-color: transparent;
   }
 }
 
