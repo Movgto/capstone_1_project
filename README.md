@@ -17,11 +17,11 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 My Portfolio <a name="about-project"></a>
+# 📖 Capstone Project 1 <a name="about-project"></a>
 
-**Welcome to my portfolio**
+**Welcome to my Microverse Capstone Project 1**
  
-This is an exercise for building a responsive portfolio webpage with a mobile-first design
+Building a webpage with home and about page
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -31,26 +31,26 @@ This is an exercise for building a responsive portfolio webpage with a mobile-fi
   <summary>Languages</summary>
   <ul>
     <li>HTML</li>
+    <li>CSS</li>
     <li>JavaScript</li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- HTML
-- CSS
+- Responsiveness for devices with different screen sizes.
+- Navigation through pages using JavaScript.
+- Elements added dynamically using JavaScript objects.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming soon
+- You can see a live demo [here](https://movgto.github.io/capstone_1_project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-Microverse is awesome!
 
 To get a local copy up and running, follow these steps.
 
@@ -58,7 +58,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-Smile :)
+Execute index.html file and that's it.
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -72,7 +72,7 @@ Smile :)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Keep learning.
+- Adding more pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,19 +80,20 @@ Smile :)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
+Feel free to check the issues page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project you can follow me, that helps a lot.
+If you like this project you can give me a good rating or leave a nice comment, that would be really helpful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank you for taking your time to pass by.
+I would like to thank you for taking your time for passing by.\
+Special credits to [Cindy Shin](https://www.behance.net/adagio07), who is the designer of the webpage template used for this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

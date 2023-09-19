@@ -1,4 +1,15 @@
 const artistsCtr = document.getElementById('artists');
+const joinBtn = document.getElementById('join-btn');
+
+const capitalizeStr = (str) => {
+  const strArr = str.toLowerCase().split(' ');
+
+  strArr.forEach((item, i) => {
+    strArr[i] = item.charAt(0).toUpperCase() + item.slice(1);
+  });
+
+  return strArr.join(' ');
+};
 
 const artistData = [
   {
@@ -75,7 +86,7 @@ artistData.forEach((artist, i) => {
     artistCard.classList.add('visible');
   }
 
-  artistCard.innerHTML = `<div class="artist-img" style='background: url(${artist.imgSrc}); background-size: cover; background-clip: border-box; background-repeat: no-repeat; background-position: center;'>
+  artistCard.innerHTML = `<div class="artist-img">
                             </div>
                             <div class="artist-info">
                                 <h2 class="artist-name">${artist.name}</h2>
@@ -83,12 +94,21 @@ artistData.forEach((artist, i) => {
                                 <hr />
                                 <p class="artist-desc">${artist.desc}</p>
                             </div>`;
+  const artistImg = artistCard.querySelector('.artist-img');
+  artistImg.style.background = `url(${artist.imgSrc}) no-repeat center`;
+  artistImg.style.backgroundSize = 'cover';
+  artistImg.style.backgroundClip = 'border-box';
 
   artistsCtr.appendChild(artistCard);
 });
 
 if (window.innerWidth < 765) {
   createMoreBtn();
+  const artistImg = document.querySelectorAll('.artist-img');
+  joinBtn.textContent = capitalizeStr(joinBtn.textContent);
+  artistImg.forEach((artist) => {
+    artist.style.backgroundSize = 'contain';
+  });
 }
 
 window.addEventListener('resize', () => {
@@ -104,6 +124,13 @@ window.addEventListener('resize', () => {
     if (moreBtn) {
       moreBtn.remove();
     }
+
+    joinBtn.textContent = joinBtn.textContent.toUpperCase();
+
+    const artistImg = document.querySelectorAll('.artist-img');
+    artistImg.forEach((artist) => {
+      artist.style.backgroundSize = 'cover';
+    });
   } else {
     if (!moreBtn) {
       createMoreBtn();
@@ -114,6 +141,13 @@ window.addEventListener('resize', () => {
           item.classList.remove('visible');
         }
       }
+    });
+
+    joinBtn.textContent = capitalizeStr(joinBtn.textContent);
+
+    const artistImg = document.querySelectorAll('.artist-img');
+    artistImg.forEach((artist) => {
+      artist.style.backgroundSize = 'contain';
     });
   }
 });

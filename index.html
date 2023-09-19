@@ -7,20 +7,55 @@
     <title>APE Festival Webpage</title>
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./js/artists.js"></script>
+    <script defer src="./js/popup.js"></script>
+    <!-- <script defer src="./js/navigation.js"></script> -->
     <script src="https://kit.fontawesome.com/76eab5b41f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div id="header-1"></div>
-        <div id="header-2"></div>
+        <div id="header-1">
+            <ul>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li>English</li>
+                <li>My page</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+        <div id="header-2">
+            <aside id="popup">
+                <ul id="popup-list">
+                    <li><a href="./about.html">About</a></li>
+                    <li>Program</li>
+                    <li>Join</li>
+                    <li>Sponsor</li>
+                    <li>News</li>
+                    <li><a href="./index.html">Home</a></li>
+                </ul>
+            </aside>
+            <i class="fa-solid fa-bars" id="bars-button"></i>
+            <img src="./images/logo.jpg" id="header-img" />
+            <ul id='desktop-menu'>
+                <li><a href="./about.html">About</a></li>
+                <li>Program</li>
+                <li>Join</li>
+                <li>Sponsor</li>
+                <li>News</li>
+                <li><a href="./index.html">Home</a></li>
+            </ul>
+        </div>
     </header>
+
     <main>
         <div id="header-wrapper">
             <img id="stage" src="./images/stage.jpg" alt="Stage photo" />
-            <h1 id="title">ALL POINTS<br />
+            <h1 id="title">
+                <small>Hello!</small><br />
+                ALL POINTS<br />
                 EAST FEST<br />
-                2023</h1>
+                2023
+            </h1>
             <p id="event-desc">
                 All Points East is an annual music festival held over two weekends in
                 London's Victoria Park, run by AEG Presents. The 10-day event comprises
@@ -41,6 +76,7 @@
             <div id="activities-ctr">
                 <div class="program-card">
                     <div class="half-area-ctr">
+                        <img src="./icons/music_genres/rap.png" />
                         <p class="activity-name">Stormzy</p>
                     </div>
                     <p class="activity-text">KEHLANI | SAMPHA | KNUCKS | LUCKY DAYE + MORE
@@ -48,6 +84,7 @@
                 </div>
                 <div class="program-card">
                     <div class="half-area-ctr">
+                        <img src="./icons/music_genres/rock.png" />
                         <p class="activity-name">Field Day</p>
                     </div>
                     <p class="activity-text">APHEX TWIN | BONOBO | ARCA | FEVER RAY | JAYDA G + MORE
@@ -55,6 +92,7 @@
                 </div>
                 <div class="program-card">
                     <div class="half-area-ctr">
+                        <img src="./icons/music_genres/rock.png" />
                         <p class="activity-name">The Strokes</p>
                     </div>
                     <p class="activity-text">YEAH YEAH YEAHS + MORE
@@ -62,6 +100,7 @@
                 </div>
                 <div class="program-card">
                     <div class="half-area-ctr">
+                        <img src="./icons/music_genres/dj.png" />
                         <p class="activity-name">Jungle</p>
                     </div>
                     <p class="activity-text">ERYKAH BADU | RAYE | GRABRIELS | NIA ARCHIVES + MORE
@@ -69,6 +108,7 @@
                 </div>
                 <div class="program-card">
                     <div class="half-area-ctr">
+                        <img src="./icons/music_genres/singer.png" />
                         <p class="activity-name">Dermot Kennedy</p>
                     </div>
                     <p class="activity-text">OLIVIA DEAN | SG LEWIS | AURORA + MORE
@@ -76,13 +116,14 @@
                 </div>
                 <div class="program-card">
                     <div class="half-area-ctr">
+                        <img src="./icons/music_genres/rock.png" />
                         <p class="activity-name">Haim</p>
                     </div>
                     <p class="activity-text">GIRL IN RED | FKJ CONFIDENCE MAN | LIZZY MCALPINE | TOVE LO + MORE
                     </p>
                 </div>
             </div>
-            <button id="join-btn">Buy Tickets</button>
+            <button id="join-btn">BUY TICKETS</button>
         </section>
         <section id="artists">
             <div id="artists-header">
@@ -91,9 +132,26 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div id="footer-1"></div>
-        <div id="footer-2"></div>
+
+    <footer id="home-footer">
+        <div id="partners-ctr">
+            <h2>Partners</h2>
+            <hr />
+            <div id="partners">
+                <img src="./images/partners/mozilla.svg" />
+                <img src="./images/partners/googlekorea.svg" />
+                <img src="./images/partners/naver.svg" />
+                <img src="./images/partners/daumkakaologo.svg" />
+                <img src="./images/partners/airbnb.svg" />
+            </div>
+        </div>
+        <div id="inner-footer">
+            <img src="./images/logo.jpg" />
+            <small>
+                2023 All East Points.<br/>
+                Some rights reserved.
+            </small>
+        </div>
     </footer>
 </body>
 
